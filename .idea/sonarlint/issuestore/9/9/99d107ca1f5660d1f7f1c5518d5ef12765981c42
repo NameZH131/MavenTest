@@ -1,0 +1,24 @@
+
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û‰ßÜ8“Ùı1J$b5d099a0-e6c6-4ce1-bcfa-853c96ace84d
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8°ÀÍşü1J$6e3499e7-f32c-4862-a6ae-9cb2ce27be6c
+	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±ÔÉ‘ı1J$0f76a3a1-87de-4410-acce-851b752a70fb
+	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²ÔÉ‘ı1J$e6a6bc0f-c59d-4bac-81f9-78801495cf07
+w
+java:S1144"4Remove this unused private "getResponseHtml" method.(ììä¸8…ïÙı1J$325cbb42-ade2-4907-a293-5925fe6cba93
+´
+java:S1989 "lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8‡ïÙı1J$d9b031bb-f5c9-44a1-8dcb-661403e408e8
+ƒ	java:S125!"<This block of commented-out lines of code should be removed.(‰¦—äúÿÿÿÿ8ˆïÙı1J$f994fb2b-69c4-45af-b856-523df1cdbe24
+r	java:S1061"+Replace this use of System.out by a logger.(Üåáõşÿÿÿÿ8ÇÔÉ‘ı1J$2e3cb581-2a6f-42f7-8fc6-787322f46c24
+‰
+java:S19892"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8£ÊÉ‘ı1J$e78d2dba-543a-4902-831b-6a5eac6206aa
+m	java:S1069"+Replace this use of System.out by a logger.(Âİ¶â8ÔÔÉ‘ı1J$9d63b048-71e0-4f66-8b1b-45cccb3f4214
+‰
+java:S1989:"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8ÔÔÉ‘ı1J$48769d99-400a-44cc-9263-220ceaba76d0
+r	java:S106="+Replace this use of System.out by a logger.(‰¯ã‰üÿÿÿÿ8ÕÔÉ‘ı1J$e15fa02e-edb9-46b8-8402-0f5e13860875
+©
+java:S1989?"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8ÕÔÉ‘ı1J$d8ca9db2-ea01-4fc8-a78e-8815c4280f00
+ƒ	java:S125@"<This block of commented-out lines of code should be removed.(î¢¸Üúÿÿÿÿ8ÖÔÉ‘ı1J$b1de62bb-a916-4cf9-8222-fe5b140c70ba
+“
+java:S1989M"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8ÙÔÉ‘ı1J$47a1f29b-cbed-40f4-a3e7-90bff8561178
+s
+java:S1128"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8Ì¬Ê‘ı1J$28cf9265-223b-4c9a-a008-9dca92822dbc

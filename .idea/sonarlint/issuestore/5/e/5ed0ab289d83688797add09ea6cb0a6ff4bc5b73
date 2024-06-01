@@ -1,0 +1,35 @@
+
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑöÍÅ8Ó³‰çü1J$91cf6007-a3b9-462d-8270-cb95fb354525
+“	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­§¹ƒ8Ô³‰çü1J$05e99976-602b-48ac-bdc9-2d1f912e3b7b
+“	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ‘›İ8Ô³‰çü1J$7015e8c7-297d-4918-9e40-23b614094664
+“	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ™¾8Ô³‰çü1J$efcc763f-86a0-445c-a1af-f55bbafba2b7
+˜	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç®áÃùÿÿÿÿ8Ô³‰çü1J$ba6d5bf0-918a-4e9b-ab62-db723d366a71
+˜	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óşã—üÿÿÿÿ8Ô³‰çü1J$d9683c6a-c6a1-425d-92e3-82425ec2804e
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8Ô³‰çü1J$0901e68b-958c-420e-9eb9-cb12b055a0b8
+
+java:S2589I"7Remove this expression which always evaluates to "true"(£ãæôúÿÿÿÿ8ı–›óü1J$b4af0697-e817-44cc-a28a-655beb3b3bed
+
+java:S3655G"9Call "Optstudent.isPresent()" before accessing the value.(Š™Ôÿÿÿÿÿ8ş–›óü1J$d838cedf-3589-4885-a1cf-22029c579072
+
+java:S1192?"MDefine a constant instead of duplicating this literal "errorMessage" 3 times.(–¤ÁÑ8×³‰çü1J$5f00dbc3-bc58-4ea7-bdc6-f737f8c39254
+›
+java:S1192@"XDefine a constant instead of duplicating this literal "/informationDisplay.jsp" 4 times.(±ÚµÆ8Ö³‰çü1J$43ea9141-25c1-436c-9d59-5fc887b6e281
+w
+java:S1144!"4Remove this unused private "getResponseHtml" method.(ììä¸8Ù³‰çü1J$a546edaf-087b-487a-b057-03cb7c83ccb2
+´
+java:S1989,"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8Ü³‰çü1J$6d595bba-53c7-4243-994b-a4f70d860209
+ƒ	java:S125."<This block of commented-out lines of code should be removed.(‰¦—äúÿÿÿÿ8Ü³‰çü1J$3d1d2140-f9b6-497b-878b-812895d2f533
+~	java:S1251"<This block of commented-out lines of code should be removed.(Ì§Ü8Ü³‰çü1J$d90cecff-4e75-4046-9d1b-8ab509f4f5ef
+¡
+java:S19898"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¬­Ô›øÿÿÿÿ8İ³‰çü1J$7b61496e-7ed8-49e2-9c53-28704f3d42e9
+¤
+java:S1989@"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±ÚµÆ8Ş³‰çü1J$9bddefe2-e021-4b1e-84b2-97d6cbca95a8
+¤
+java:S1989W"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±ÚµÆ8â³‰çü1J$a4601990-d9b5-4905-9b9c-5e371d3c9bc7
+r	java:S106Y"+Replace this use of System.out by a logger.(‰­‹™ûÿÿÿÿ8â³‰çü1J$43543dcf-9a4d-490f-a3ab-0c0bd344296c
+¤
+java:S1989^"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±ÚµÆ8â³‰çü1J$e2a34b95-b0f2-4d93-9815-c706f29faec2
+“
+java:S1989m"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8ã³‰çü1J$bfd32375-b5e9-4671-9ecb-6406083f240d
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8’—›óü1J$b70333a2-e2b7-455a-8a8d-60d96a7ef126

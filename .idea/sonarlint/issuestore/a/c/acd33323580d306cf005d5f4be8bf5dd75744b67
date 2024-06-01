@@ -1,0 +1,27 @@
+
+ˆ	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ì„¡¸J$4d48907e-a1d4-4524-a86a-5d59c01eb723
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓJ$11fcf7e3-c58e-4a57-b509-c19b1173adc4
+Œ
+java:S1192="KDefine a constant instead of duplicating this literal "/logIn.jsp" 4 times.(ş¨úúÿÿÿÿJ$ca127ebf-a889-4a88-ace8-11ba4548debc
+
+java:S1192<"MDefine a constant instead of duplicating this literal "errorMessage" 4 times.(¤‡Ü˜ıÿÿÿÿJ$35dc1e5d-baea-4cc7-9bcb-6a56f4463db1
+p
+java:S1144"4Remove this unused private "getResponseHtml" method.(ììä¸J$6b396ff3-e51e-408e-b2a4-c03b468010e7
+­
+java:S1989"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿJ$f4f50d6d-1511-459c-8a86-8ab138724433
+|	java:S125 "<This block of commented-out lines of code should be removed.(‰¦—äúÿÿÿÿJ$f26bf952-b465-4804-96f2-96a325188d59
+w	java:S125#"<This block of commented-out lines of code should be removed.(Ì§ÜJ$22a77848-2053-4399-a0e0-41b968353201
+|	java:S125("<This block of commented-out lines of code should be removed.(ˆ¤†ÌıÿÿÿÿJ$e35faf0f-e3af-4e5a-8f4c-733b2beec060
+|	java:S125/"<This block of commented-out lines of code should be removed.(Ô»˜ÖşÿÿÿÿJ$9dc9fe01-a8cd-463b-9a25-efd30465037a
+¢
+java:S1989="aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ş¨úúÿÿÿÿJ$a798c764-f455-4a8f-89d9-19cc1d6eb440
+
+java:S1989B"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ò‘øÓJ$0d514009-4703-4d91-bb92-00eb1b699218
+¢
+java:S1989F"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ş¨úúÿÿÿÿJ$53a9b73f-0475-48bf-80d2-7b9102ae80ce
+¢
+java:S1989J"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ş¨úúÿÿÿÿJ$a3154439-c8f0-4ab2-8d96-ffc2a6f010f2
+
+java:S1989P"aHandle the following exceptions that could be thrown by "include": ServletException, IOException.(âè¹›J$55f2d2ca-a74e-4cea-962c-882b998b928a
+Œ
+java:S1989^"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†J$34655d8e-0466-4ce9-9bdb-962471332afa

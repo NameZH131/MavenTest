@@ -1,0 +1,15 @@
+
+
+java:S1192#"GDefine a constant instead of duplicating this literal "c_name" 3 times.(ô×Ø´ûÿÿÿÿ8ôĞıæü1J$fa4a4647-5953-4d09-8ab1-2e8d21923acb
+b
+java:S6905"Don't use the query "SELECT *".(û°®ß8ùĞıæü1J$49b0bf84-809a-4259-a286-24b92b0190c9
+m	java:S106'"+Replace this use of System.out by a logger.(İ½‹¡8úĞıæü1J$b75dd30a-80e5-454d-86cb-2246cdf241fa
+b
+java:S69057"Don't use the query "SELECT *".(À­Òö8úĞıæü1J$564a4395-51e4-4216-827e-fa2e4f41bfb3
+l	java:S106B"+Replace this use of System.out by a logger.(¡å˜v8ûĞıæü1J$83362098-f2b2-408c-aa6b-b8d02ae02588
+b
+java:S6905K"Don't use the query "SELECT *".(®ÈàŒ8üĞıæü1J$afd17415-e5ee-40c2-ba3f-aafdb37334ec
+w
+java:S2695b"/This "PreparedStatement" only has 2 parameters.(¿¥’¾ùÿÿÿÿ8ÿĞıæü1J$63ee3b1d-fce0-4acf-8e5f-dfdd108a7d3a
+q
+java:S2695s"/This "PreparedStatement" only has 2 parameters.(›Çæp8€Ñıæü1J$87c4d14d-0bbb-4e48-af43-e1f7d69f45bf
