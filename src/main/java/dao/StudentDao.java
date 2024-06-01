@@ -42,7 +42,7 @@ public class StudentDao {
         return students;
     }
 
-    public void addStudent(Student student) {
+    public boolean addStudent(Student student) {
         String sql = "INSERT INTO student (s_id, s_password, s_name, s_age, s_gender, s_grade) VALUES (?, ?, ?, ?, ?, ?)";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, student.getsId());
@@ -55,9 +55,11 @@ public class StudentDao {
         } catch (SQLException e) {
             System.out.println("添加学生失败");
             e.printStackTrace();
+            return false;
         } finally {
             JDBCConnUtil.closeDB();
         }
+        return true;
     }
 
     public void deleteStudent(int sId) {
