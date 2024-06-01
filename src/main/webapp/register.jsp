@@ -15,8 +15,8 @@
 </head>
 <body>
 <h1>注册页面</h1>
-<div>
-    <form action="${pageContext.request.contextPath}/register" method="post" class="flex-container" style="border-radius:6%">
+<div style="background-image: none;">
+    <form action="${pageContext.request.contextPath}/register" method="post" class="flex-container" style="border-radius:6%;background-image: none;">
         <table>
             <tr>
                 <td><label for="username">ID:</label></td>

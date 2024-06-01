@@ -1,24 +1,28 @@
 
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û‰ßÜ8“Ùı1J$b5d099a0-e6c6-4ce1-bcfa-853c96ace84d
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8°ÀÍşü1J$6e3499e7-f32c-4862-a6ae-9cb2ce27be6c
-	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±ÔÉ‘ı1J$0f76a3a1-87de-4410-acce-851b752a70fb
-	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²ÔÉ‘ı1J$e6a6bc0f-c59d-4bac-81f9-78801495cf07
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û‰ßÜ8¹Ãı–ı1J$36193311-5dcf-42e9-a8ae-cb5c6dd1bb0a
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8¹Ãı–ı1J$1d15401b-4bb2-47ae-9bcf-6747a42d5ad6
+	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8»Ãı–ı1J$2f61d130-2707-4af5-8c03-62010cb0a65c
+	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8»Ãı–ı1J$be692e70-e768-46cf-a2e5-b0627576a4d8
 w
-java:S1144"4Remove this unused private "getResponseHtml" method.(ììä¸8…ïÙı1J$325cbb42-ade2-4907-a293-5925fe6cba93
+java:S1144"4Remove this unused private "getResponseHtml" method.(ììä¸8½Ãı–ı1J$a6f95602-1217-4b4c-8ccd-870cfc1e5f70
 ´
-java:S1989 "lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8‡ïÙı1J$d9b031bb-f5c9-44a1-8dcb-661403e408e8
-ƒ	java:S125!"<This block of commented-out lines of code should be removed.(‰¦—äúÿÿÿÿ8ˆïÙı1J$f994fb2b-69c4-45af-b856-523df1cdbe24
-r	java:S1061"+Replace this use of System.out by a logger.(Üåáõşÿÿÿÿ8ÇÔÉ‘ı1J$2e3cb581-2a6f-42f7-8fc6-787322f46c24
+java:S1989!"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8¿Ãı–ı1J$6fe28c7c-a588-402a-ac68-9d11125c7062
+˜
+java:S1989""PHandle the following exception that could be thrown by "getWriter": IOException.(ïô†úÿÿÿÿ8¿Ãı–ı1J$9b9f59d5-c573-4dee-9323-dc759b9aa4e8
+~	java:S125%"<This block of commented-out lines of code should be removed.(Ì§Ü8¿Ãı–ı1J$e76b6210-e46f-49ea-b927-193b6f479b58
+m	java:S1061"+Replace this use of System.out by a logger.(ó÷óº8ÀÃı–ı1J$b1b9e89c-ee45-407e-ad9f-e5a7b9491572
 ‰
-java:S19892"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8£ÊÉ‘ı1J$e78d2dba-543a-4902-831b-6a5eac6206aa
-m	java:S1069"+Replace this use of System.out by a logger.(Âİ¶â8ÔÔÉ‘ı1J$9d63b048-71e0-4f66-8b1b-45cccb3f4214
+java:S19894"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8ÀÃı–ı1J$f41322d6-a440-4d24-a0d5-926749171a31
+ƒ	java:S1258"<This block of commented-out lines of code should be removed.(ÎüÃƒüÿÿÿÿ8ÁÃı–ı1J$cc300164-f3bb-4a2b-a008-5755b95aa614
+m	java:S106>"+Replace this use of System.out by a logger.(Âİ¶â8ÁÃı–ı1J$51af09b2-8890-4c96-ab66-46530aee22a4
 ‰
-java:S1989:"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8ÔÔÉ‘ı1J$48769d99-400a-44cc-9263-220ceaba76d0
-r	java:S106="+Replace this use of System.out by a logger.(‰¯ã‰üÿÿÿÿ8ÕÔÉ‘ı1J$e15fa02e-edb9-46b8-8402-0f5e13860875
+java:S1989A"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8ÁÃı–ı1J$9fb8ab8a-9352-476f-bd2f-30cc2a6b0b88
 ©
-java:S1989?"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8ÕÔÉ‘ı1J$d8ca9db2-ea01-4fc8-a78e-8815c4280f00
-ƒ	java:S125@"<This block of commented-out lines of code should be removed.(î¢¸Üúÿÿÿÿ8ÖÔÉ‘ı1J$b1de62bb-a916-4cf9-8222-fe5b140c70ba
+java:S1989D"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8ÂÃı–ı1J$7628e037-fae3-4971-bcd3-d467be73ff9a
+r	java:S106F"+Replace this use of System.out by a logger.(‰¯ã‰üÿÿÿÿ8ÂÃı–ı1J$e8cbe284-49d1-4dbb-9613-24e289f6bb4a
+~	java:S125G"<This block of commented-out lines of code should be removed.(Àø£8ô¥Ÿ—ı1J$0fb9d68f-61ad-4650-8293-3ae4c2fd446e
+©
+java:S1989K"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8¨Ã —ı1J$8b0c50d1-6fc6-4fad-9a66-96ebb2f383bf
+ƒ	java:S125L"<This block of commented-out lines of code should be removed.(î¢¸Üúÿÿÿÿ8¨Ã —ı1J$415ce538-03ee-4d73-a8cb-be6aa0a6d7c5
 “
-java:S1989M"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8ÙÔÉ‘ı1J$47a1f29b-cbed-40f4-a3e7-90bff8561178
-s
-java:S1128"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8Ì¬Ê‘ı1J$28cf9265-223b-4c9a-a008-9dca92822dbc
+java:S1989Y"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8ÒÜ‰—ı1J$3a32e469-e492-4b4a-9531-1f193ab7d52b

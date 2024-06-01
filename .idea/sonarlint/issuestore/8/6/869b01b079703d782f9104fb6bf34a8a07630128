@@ -1,23 +1,22 @@
 
-„
-java:S1192"HDefine a constant instead of duplicating this literal "t_major" 3 times.(ïÎƒàJ$57bbe1d4-36e8-4bb7-9cef-67355b0c2af3
-Š
-java:S1192"IDefine a constant instead of duplicating this literal "t_gender" 3 times.(÷¿ª¥ıÿÿÿÿJ$e023059e-2c54-450f-985a-e91fbb2112b6
 ‹
-java:S1192"JDefine a constant instead of duplicating this literal "t_workgae" 3 times.(í€ó§ùÿÿÿÿJ$541546ef-4d61-449e-8d7b-b1fe5e253667
-‚
-java:S1192"GDefine a constant instead of duplicating this literal "t_name" 3 times.(¤€¤J$6db4d0ec-63e5-43b0-be79-632ef0081e8e
-
-java:S1192"FDefine a constant instead of duplicating this literal "t_age" 3 times.(óèbJ$122add5b-9d87-46c9-a454-30151a1564d4
-[
-java:S6905"Don't use the query "SELECT *".(î”øÀJ$0af42dba-3c01-4dc6-93e0-23a3043d6b9e
-k	java:S106#"+Replace this use of System.out by a logger.(Øü•õøÿÿÿÿJ$f7026d02-de94-4a89-9ddc-d8c8b824565a
-`
-java:S6905,"Don't use the query "SELECT *".(¬×³¾şÿÿÿÿJ$e4306326-cfbe-49ab-9198-c9b20296fee5
-k	java:S106;"+Replace this use of System.out by a logger.(ÈµÏÅúÿÿÿÿJ$70d5b246-6e39-4d63-b55f-a9c3c8f36c32
-k	java:S106N"+Replace this use of System.out by a logger.(«œ¯ıÿÿÿÿJ$2e29f9cd-692d-4780-8aa8-a84e3afe59b1
-f	java:S106]"+Replace this use of System.out by a logger.(Ñ·¿ˆJ$5c1677fd-8f9e-4e36-a9af-8a672e725ed6
-k	java:S106t"+Replace this use of System.out by a logger.(ôÕŞÿÿÿÿÿJ$0bf254f5-52a2-4170-b240-27021e949d28
-[
-java:S6905~"Don't use the query "SELECT *".(¡©Ú´J$0c736c0a-fb96-49d3-a74f-2fc71d597c85
-l	java:S106"+Replace this use of System.out by a logger.(¹•ïÆşÿÿÿÿJ$0ba73b3a-338f-428f-af2a-8c3065c6ede8
+java:S1192"HDefine a constant instead of duplicating this literal "t_major" 3 times.(ïÎƒà8 …ù™ı1J$af9ddc43-edc4-486d-b5c7-e819e7e5f6d2
+‘
+java:S1192"IDefine a constant instead of duplicating this literal "t_gender" 3 times.(÷¿ª¥ıÿÿÿÿ8¡…ù™ı1J$e586ce50-c0b5-4f25-8618-1c24c6afd16b
+’
+java:S1192"JDefine a constant instead of duplicating this literal "t_workgae" 3 times.(í€ó§ùÿÿÿÿ8¡…ù™ı1J$258e84ac-eb75-4663-88af-92132afb1b78
+‰
+java:S1192"GDefine a constant instead of duplicating this literal "t_name" 3 times.(¤€¤8¡…ù™ı1J$2450021b-2355-439b-9be0-b3e61e8b2ff7
+ˆ
+java:S1192"FDefine a constant instead of duplicating this literal "t_age" 3 times.(óèb8¡…ù™ı1J$77a0b16b-b2dc-4fac-b508-c0c3b847c056
+b
+java:S6905"Don't use the query "SELECT *".(î”øÀ8¦…ù™ı1J$c261a3c6-b519-48d6-89dc-df0ca1fc19cc
+r	java:S106#"+Replace this use of System.out by a logger.(Øü•õøÿÿÿÿ8§…ù™ı1J$e258ccfc-7276-41bc-a268-3911d8e13a34
+g
+java:S6905,"Don't use the query "SELECT *".(¬×³¾şÿÿÿÿ8§…ù™ı1J$4d044e61-cf19-4a3d-99e5-17a0d89387fe
+r	java:S106;"+Replace this use of System.out by a logger.(ÈµÏÅúÿÿÿÿ8¨…ù™ı1J$5c7d3864-553d-4d94-8352-841357bc4e47
+r	java:S106N"+Replace this use of System.out by a logger.(«œ¯ıÿÿÿÿ8ª…ù™ı1J$20423aa5-16d4-4c54-9924-6f7e44e20f15
+m	java:S106]"+Replace this use of System.out by a logger.(Ñ·¿ˆ8«…ù™ı1J$36990b1e-23d3-4876-abf6-df3b41e1b83d
+r	java:S106t"+Replace this use of System.out by a logger.(ôÕŞÿÿÿÿÿ8­…ù™ı1J$c413c139-838a-40fd-a6d8-e666dc1cdc3d
+~	java:S125~"<This block of commented-out lines of code should be removed.(¥Ô†ª8®…ù™ı1J$60f375ff-b6ef-44ec-9176-f53f6c6f4bbd
+s	java:S106‘"+Replace this use of System.out by a logger.(¹•ïÆşÿÿÿÿ8¯…ù™ı1J$bc4e8a0e-badd-4580-a602-db747adde417

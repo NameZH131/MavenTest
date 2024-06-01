@@ -11,14 +11,14 @@
 <!--    建立一个标准的学生系统主页-->
 <h1>学生管理系统</h1>
 <p>欢迎使用学生管理系统，请登录或注册。</p>
-    <div style="width: 60px; display:inline-block">
+    <div style="width: 60px; display:inline-block;background-image: none;">
         <table>
             <tr>
                 <td><a href="/logIn.jsp">登录</a></td>
             </tr>
         </table>
     </div>
-    <div style="width: 60px; display: inline-block">
+    <div style="width: 60px; display: inline-block;background-image: none;">
         <table>
             <tr>
                 <td><a href="/register.jsp">注册</a></td>

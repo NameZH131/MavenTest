@@ -48,9 +48,9 @@
 
                     // 如果选项的值与被选中的值相同，则禁用或删除该选项
                     if (option.value === selectedValue) {
-                        // option.disabled = true;
+                        option.disabled = true;
                         // 或者使用以下代码删除该选项
-                        option.parentNode.removeChild(option);
+                        // option.parentNode.removeChild(option);
                     } else {
                         // 如果之前被禁用了，现在需要重新启用
                         option.disabled = false;
@@ -59,25 +59,12 @@
             }
         }
     </script>
-
-
-
-    <style>
-        .div-NormalStyle{
-            padding: 0;
-            background-image: none;
-            background-color: #2c032512;
-            border-radius: 0;
-            border: 0;
-            box-shadow: none;
-        }
-
-    </style>
 <%--    引入脚本--%>
     <script src="${request.contextPath}/script/script.js"></script>
 </head>
 <body>
-<div style="width:100%;height:100%; padding: 0;border-radius: 0">
+<h1>Information updating</h1>
+<div style="width:100%;height:100%;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);" class="div-NormalStyle">
     <div style="width:30%;" class="div-NormalStyle">
         <form action="${pageContext.request.contextPath}/informationUpdate_search" method="get">
             <table>
@@ -95,7 +82,7 @@
     <%--    div左对齐--%>
     <div style="width:65%; float: left;" class="div-NormalStyle">
         <p class="font-face" style="color:pink;">Student Course Information: ${requestScope.student.sName}有${requestScope.serveList.size()}门课程</p>
-        <div style="width:100%;" class="flex-container div-NormalStyle" >
+        <div style="width:100%;box-shadow: none" class="flex-container div-NormalStyle" >
             <c:forEach items="${requestScope.serveList}" var="serve" varStatus="loop">
                 <div class="div-NormalStyle">
                     <table>
@@ -149,14 +136,18 @@
     <div style="width: 35%;float:right;" class="div-NormalStyle">
         <form action="${pageContext.request.contextPath}/informationUpdate" method="get">
             <table>
-                <p class="font-face" style="color:pink;">${student.cId}${student.cName}更新课程</p>
+                <tr>
+                    <td colspan="4">
+                        <p class="font-face" style="color:pink;">${student.sId}${student.sName}更新课程</p>
+                    </td>
+                </tr>
                 <c:forEach items="${requestScope.allCourseList}" var="allcourse" varStatus="loop">
                     <tr>
                         <td><label for="checkboxAllCourse${loop.index}" class="font-face"
                                    style="color:pink;">${allcourse.cId}:${allcourse.cName}</label>
                         </td>
                         <td>
-                            <input type="hidden" name="studentForSavingCourseArrange" value="${requestScope.student.sId}">
+                            <input type="hidden" name="studentCRUD" value="${requestScope.student.sId}">
                             <input type="checkbox" id="checkboxAllCourse${loop.index}" name="checkboxCourse"
                                    value="${allcourse.cId}" style=" width: 24px; height: 24px;">
                         </td>
@@ -173,11 +164,12 @@
                     </tr>
                 </c:forEach>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="4">
                         <input type="submit" value="更新选课配置" onclick="confirmQuery()">
                     </td>
                 </tr>
                 <p class="font-face" style="color:#ff3edf;">${requestScope.errorMessageForUpdate}</p>
+                <p class="font-face" style="color:#ff3edf;">${requestScope.successMessageForUpdate}</p>
             </table>
         </form>
     </div>

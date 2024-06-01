@@ -32,10 +32,10 @@
 <h1>Student Data Logging</h1>
 <p>This page is used to log student data.</p>
 <!-- 要实现文本在垂直方向上居中显示，可以使用 Flexbox 布局 -->
-<div style="background-image: none">
+<div style="background-image: none;">
     <form action="${pageContext.request.contextPath}/logIn" method="get" style="border-radius:6%">
-        <p>${pageContext.request.contextPath}</p>
         <table>
+            <p>${pageContext.request.contextPath}</p>
             <tr>
                 <div id="rotatingPlane" style="display: flex;
     justify-content: center;
@@ -63,6 +63,9 @@
                     <p><a href="${pageContext.request.contextPath}/mainUi.jsp"> Back to Main UI</a></p>
                 </td>
             </tr>
+            <tr><td colspan="2">
+
+            </td></tr>
         </table>
     </form>
 
@@ -71,7 +74,7 @@
     <%--       --%>
     <%--    }%> --%>
 
-    <p class="font-face" style="color:pink;">${requestScope.errorMessage}</p>
+    <p class="font-face" style="color:#ff5a77;">${requestScope.errorMessage}</p>
 </div>
 
 

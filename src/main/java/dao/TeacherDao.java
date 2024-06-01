@@ -123,7 +123,11 @@ public class TeacherDao {
 
     public List<Teacher> getTeacherByStudensId(int sId) {
         List<Teacher> teachers = new ArrayList<>();
-        String sql = "SELECT * FROM teacher WHERE t_id IN (SELECT t_id FROM serve WHERE s_id = ?)";
+//        select * from teacher t right join serve s on s.t_id = t.t_id where s.s_id =3;
+//        select * from teacher t  join serve s on s.t_id = t.t_id where s.s_id =3;
+//        select * from serve inner join teacher on serve.t_id = teacher.t_id where serve.s_id =3;
+//        String sql = "SELECT * FROM teacher WHERE t_id IN (SELECT t_id FROM serve WHERE s_id = ?)";
+        String sql = "select teacher.* from teacher left join serve on serve.t_id = teacher.t_id where serve.s_id = ?";
         try ( PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, sId);
             ResultSet rs = ps.executeQuery();

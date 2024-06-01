@@ -1,55 +1,66 @@
-*{
+* {
     text-align: center;
     line-height: 32px;
 }
 
 body {
-    font-family:微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     background: url("/resource/image/wallhaven-5gzod5.jpg") repeat-x left top;
 
-    background-attachment: fixed;
+
+    /*取消页面的侧边滚动*/
+    /*overflow-x: hidden;*/
+    overflow-y: auto;
+
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover; /* 使背景图片覆盖整个页面 */
     background-position: center center; /* 将背景图片居中 */
 }
 
-a{
+a {
     color: #ff3edf;
-    text-decoration:none
+    text-decoration: none
 }
 
-a:hover{
-    color: #ffffff;
+a:hover {
+    color: #ffd4d4;
     /* text-decoration: underline; */
-    font-size:21px;
+    /* text-shadow: 0 0 5px #ff7dd0; */
+    box-shadow: 0 0 5px #000000;
+    font-size: 22px;
 }
+
 /*字体美化*/
 .font-face {
     color: rgb(0, 0, 0);
-    text-shadow:0 0 4px #ffb7e2;
+    text-shadow: 0 0 4px #ffb7e2;
 }
+
 /*label美化*/
-  label{
-    color:#ffffff;
-    text-shadow:0 0 9px #ff6767;
-}
-  /*h美化*/
-h1,h2,h3{
+label {
     color: #ffffff;
-    text-shadow:0 0 9px #ff7dd0;
+    text-shadow: 0 0 9px #ff6767;
 }
 
-input{
-    border-radius:10px
+/*h美化*/
+h1, h2, h3 {
+    color: #ffffff;
+    text-shadow: 0 0 9px #ff7dd0;
 }
 
-input:hover{
+input {
+    border-radius: 10px
+}
+
+input:hover {
     border: 2px solid #ff3edf;
     box-shadow: 0 0 5px #ff3edf;;
 }
-select{
-    border-radius:10px;
+
+select {
+    border-radius: 10px;
     -webkit-appearance: none;
     appearance: none;
     background-image: none;
@@ -58,30 +69,28 @@ select{
     /* padding-right: 15px; /* 根据箭头的大小调整 */
 }
 
-select:hover{
+select:hover {
     border: 2px solid #ff3edf;
     box-shadow: 0 0 5px #ff3edf;
 }
 
 
-
-div{
-    width:385px;
+div {
+    width: 385px;
     padding: 30px;
     margin: 0 auto;
     height: auto;
     background-image: url("/resource/image/wallhaven-5gzod5.jpg");
     background-color: #ffd8d829;
     box-shadow: 0 0 8px #ffffff;
-    border-radius:6%;
+    border-radius: 6%;
 }
 
-.div-NormalStyle{
+.div-NormalStyle {
     padding: 0;
     background-image: none;
-    background-color: #2c032512;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
-    border: 0;
     box-shadow: none;
 }
 
@@ -94,8 +103,8 @@ div{
     /*弹性盒元素超过宽度换行.flex 容器内的子元素不会自动换行，除非你设置了 flex-wrap 属性为 wrap 或 wrap-reverse。*/
     flex-wrap: wrap;
 
-    justify-content: center;/* 水平居中 */
-    align-items: center;/* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
     align-content: center;
 
     box-shadow: 0 0 8px #ffffff;
