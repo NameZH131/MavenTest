@@ -21,8 +21,8 @@ public class StudentService {
         return studentDao.getAllStudents();
     }
 
-    public void addStudent(Student student) {
-        studentDao.addStudent(student);
+    public boolean addStudent(Student student) {
+        return studentDao.addStudent(student);
     }
 
     public void deleteStudent(int sId) {

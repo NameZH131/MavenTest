@@ -53,23 +53,24 @@ public class register extends HttpServlet {
         }
         if (username != null && password != null) {
             try {
-                new StudentService().addStudent(new Student(Integer.parseInt(username), password, name, ageInt, gender, Integer.parseInt(grade)));
+                if (!new StudentService().addStudent(new Student(Integer.parseInt(username), password, name, ageInt, gender, Integer.parseInt(grade)))){
+                    request.setAttribute("errorMessage", "注册失败，用户名已存在");
+                    request.getRequestDispatcher("/register.jsp").forward(request, response);
+                    out.println("<alert>学生注册失败，用户名已存在</alert>");
+                }
+                request.setAttribute("successMessage", "注册成功，请您登录");
+                request.getRequestDispatcher("/logIn.jsp").forward(request, response);
 
             } catch (NumberFormatException e) {
                 System.out.println("学生注册失败，系添加学生功能异常");
-                request.setAttribute("errorMessageForRegister", "注册失败，请填写完整信息");
+                request.setAttribute("errorMessage", "注册失败，添加学生功能异常");;
                 request.getRequestDispatcher("/register.jsp").forward(request, response);
-                out.println("<alert>学生注册失败，系添加学生功能异常</alert>");
                 e.printStackTrace();
                 throw new RuntimeException(e);
             }
-            request.setAttribute("successMessageForRegister", "注册成功，请登录");
-            request.getRequestDispatcher("/login.jsp").forward(request, response);
-            out.println("<alert>学生注册成功，请登录</alert>");
         } else {
-            request.setAttribute("", "");
-            request.getRequestDispatcher("/register.jsp").include(request, response);
-            out.println("<alert>学生注册失败，请填写完整信息，注册表单js脚本故障</alert>");
+            request.setAttribute("errorMessage", "请填写完整信息，注册表单js脚本故障") ;
+            request.getRequestDispatcher("/register.jsp").forward(request, response);
         }
     }
 

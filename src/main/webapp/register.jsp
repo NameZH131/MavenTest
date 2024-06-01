@@ -80,7 +80,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <span>${requestScope.successMessageForRegister}${requestScope.errorMessageForRegister}</span>
+                    <span class="font-face" style="color: #ffa1a1;">${requestScope.successMessage}${requestScope.errorMessage}</span>
                 </td>
         </table>
 

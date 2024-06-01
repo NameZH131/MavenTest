@@ -74,7 +74,7 @@
     <%--       --%>
     <%--    }%> --%>
 
-    <p class="font-face" style="color:#ff5a77;">${requestScope.errorMessage}</p>
+    <p class="font-face" style="color:#ff5a77;">${requestScope.errorMessage}${requestScope.successMessage}</p>
 </div>
 
 

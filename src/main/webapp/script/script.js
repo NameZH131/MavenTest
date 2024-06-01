@@ -27,7 +27,8 @@ function validateForm() {
         return false;
     }
     if (isNaN(username.value)) {
-        username.value = ""; // 清空用户名输入框的值
+        username.value = ""
+        password.value = ""; // 清空用户名输入框的值
         username.focus(); // 重新获得用户名输入框的焦点
         alert("ID必须为数字");
         return false;

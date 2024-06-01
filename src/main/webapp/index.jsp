@@ -9,7 +9,7 @@
 </head>
 <body>
 <!--    建立一个标准的学生系统主页-->
-<h1>学生管理系统</h1>
+<h1>学生课程管理系统</h1>
 <p>欢迎使用学生管理系统，请登录或注册。</p>
     <div style="width: 60px; display:inline-block;background-image: none;">
         <table>
