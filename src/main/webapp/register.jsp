@@ -12,11 +12,13 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style/style.css">
     <script src="${pageContext.request.contextPath}/script/script.js" type="text/javascript"></script>
     <title>Register</title>
+
 </head>
 <body>
 <h1>注册页面</h1>
 <div style="background-image: none;">
-    <form action="${pageContext.request.contextPath}/register" method="post" class="flex-container" style="border-radius:6%;background-image: none;">
+<%--    <form action="${pageContext.request.contextPath}/register" method="post" onsubmit="return validateForm()" class="flex-container" style="border-radius:6%;background-image: none;"> --%>
+        <form action="${pageContext.request.contextPath}/register" method="get" class="flex-container" style="border-radius:6%;background-image: none;">
         <table>
             <tr>
                 <td><label for="username">ID:</label></td>
@@ -38,8 +40,8 @@
                 <td><label for="gender">Gender:</label></td>
                 <td>
                     <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
+                        <option value="男">Male</option>
+                        <option value="女">Female</option>
                     </select>
                 </td>
             </tr>
@@ -62,7 +64,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="注册" onclick="validateForm()">🥰
+                    <input type="submit" value="注册">🥰
                     <input type="reset" value="重置">
                 </td>
             </tr>
@@ -76,6 +78,10 @@
                     <a href="${pageContext.request.contextPath}/index.jsp">返回首页</a>
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    <span>${requestScope.successMessageForRegister}${requestScope.errorMessageForRegister}</span>
+                </td>
         </table>
 
     </form>

@@ -1,19 +1,19 @@
 
-`	java:S112N"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-`	java:S112["FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-`	java:S112k"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-\	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(äº¤È
-\
-java:S1192"FDefine a constant instead of duplicating this literal "score" 3 times.(Àä‚ñ
-5
-java:S6905"Don't use the query "SELECT *".(Œ’™Ú
-@	java:S106#"+Replace this use of System.out by a logger.(±°‰ò
-:
-java:S6905."Don't use the query "SELECT *".(¤î ðùÿÿÿÿ
-@	java:S106;"+Replace this use of System.out by a logger.(Ý³ñÄ
-E	java:S106M"+Replace this use of System.out by a logger.(µ’ÄÄÿÿÿÿÿ
-E	java:S106Z"+Replace this use of System.out by a logger.(­ôœŸÿÿÿÿÿ
-E	java:S106j"+Replace this use of System.out by a logger.(Ç©¶àþÿÿÿÿ
-:
-java:S6905r"Don't use the query "SELECT *".(¤î ðùÿÿÿÿ
-A	java:S106‚"+Replace this use of System.out by a logger.(±°‰ò
+†	java:S112N"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$89c91e68-27f5-4018-b521-3ff6eced417e
+†	java:S112["FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$4820cd43-53cb-4517-a0d7-340c2fc23eb1
+†	java:S112k"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$c3cfbf44-d81c-4783-b016-686b390d036c
+‚	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(äº¤ÈJ$c9f982f9-4448-4dfd-a761-f7cf7dbea969
+‚
+java:S1192"FDefine a constant instead of duplicating this literal "score" 3 times.(Àä‚ñJ$1ad1ecc6-fd8e-4a87-b082-f10fbd3da58e
+[
+java:S6905"Don't use the query "SELECT *".(Œ’™ÚJ$fcaad6e5-65a1-476d-9e3b-9f4ffeb3a3f0
+f	java:S106#"+Replace this use of System.out by a logger.(±°‰òJ$6dab202f-9194-45b4-8654-94eb86cab852
+`
+java:S6905."Don't use the query "SELECT *".(¤î ðùÿÿÿÿJ$61c1d568-53ff-4c0d-a986-0fbfd72f48d8
+f	java:S106;"+Replace this use of System.out by a logger.(Ý³ñÄJ$7d4fd005-b005-424e-bdd9-395d53866e33
+k	java:S106M"+Replace this use of System.out by a logger.(µ’ÄÄÿÿÿÿÿJ$8b924f0d-91f3-420c-a6d1-5911833a9171
+k	java:S106Z"+Replace this use of System.out by a logger.(­ôœŸÿÿÿÿÿJ$a3f80d9b-9df4-4dac-8cfb-b1a62e668252
+k	java:S106j"+Replace this use of System.out by a logger.(Ç©¶àþÿÿÿÿJ$21df9883-d9be-4ed5-8494-410604d33b52
+`
+java:S6905r"Don't use the query "SELECT *".(¤î ðùÿÿÿÿJ$9dabed69-2f72-41a1-995f-e46d368dc7d8
+g	java:S106‚"+Replace this use of System.out by a logger.(±°‰òJ$9ddaf8f8-b1d4-426b-bb60-184726f8c0c7

@@ -69,18 +69,21 @@ public class informationDisplay extends HttpServlet {
             try {
                 Optional<Student> Optstudent=new StudentService().getStudentById(sId);
                 Student student=Optstudent.get();
-                Optional<Serve> Optserve= new ServeService().getServeById(sId);
-                if( Optstudent.isPresent() &&Optserve.isPresent()){
-                    Optional<Course> Optcourse = new CourseService().getCourseByCoursecId((Optserve.get().getcId()));
-                    Optional<Teacher> Optteacher=new TeacherService().getTeacherByTeacherId(Optserve.get().gettId());
-                    if(Optcourse.isPresent() && Optteacher.isPresent()){
-                        request.setAttribute("student",student);
-                        request.setAttribute("course",Optcourse.get());
-                        request.setAttribute("teacher",Optteacher.get());
-                        //请求转发
-                        request.getRequestDispatcher("/informationDisplay.jsp").forward(request,response);
-                    }
-                }
+//                Optional<Serve> Optserve= new ServeService().getServeById(sId);
+//                if( Optstudent.isPresent() &&Optserve.isPresent()){
+//                    Optional<Course> Optcourse = new CourseService().getCourseByCoursecId((Optserve.get().getcId()));
+//                    Optional<Teacher> Optteacher=new TeacherService().getTeacherByTeacherId(Optserve.get().gettId());
+//                    if(Optcourse.isPresent() && Optteacher.isPresent()){
+//                        request.setAttribute("student",student);
+//                        request.setAttribute("course",Optcourse.get());
+//                        request.setAttribute("teacher",Optteacher.get());
+//                        //请求转发
+//                        request.getRequestDispatcher("/informationDisplay.jsp").forward(request,response);
+//                    }
+//                }
+                if(Optstudent.isPresent())
+                request.setAttribute("student",student);
+                request.getRequestDispatcher("/informationDisplay.jsp").forward(request,response);
              } catch (Exception e) {
                 request.setAttribute("errorMessage", "Id不存在哎");
                 //请求转发

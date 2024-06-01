@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-<div style="width: 100% ;border-radius:0 ;">
+<div style="width: 100% ;border-radius: 20px;box-shadow:0 0 14px black;">
     <span style="float: left"><img src="${pageContext.request.contextPath}/resource/image/navigationBar/index_logo.gif"
                                    alt="图标" width="506"></span>
 

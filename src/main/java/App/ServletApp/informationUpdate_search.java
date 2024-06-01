@@ -92,6 +92,11 @@ public class informationUpdate_search extends HttpServlet {
                     request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
                 } else {
                     request.setAttribute("errorMessage", "该学生没有选课");
+                    
+                    request.setAttribute("student", student.get());
+
+                    request.setAttribute("allCourseList", allCourseList);
+                    request.setAttribute("allTeacherList",allTeacherList);
                     request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
                 }
 

@@ -1,33 +1,35 @@
 
-	java:S101!"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¶Ì˜³8’Îèü1J$ac448f84-abd5-4eb0-8bbe-0fa5beff8452
-“	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­§¹ƒ8’Îèü1J$563e1829-a223-43cf-a4fd-882577cf376a
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8’Îèü1J$d3f99b7e-dd92-460e-93a7-cdb7b32b021a
+	java:S101!"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¶Ì˜³8’Îèü1J$8313b084-e84e-446f-b3be-7a15ccbee6e9
+“	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­§¹ƒ8’Îèü1J$5378c142-0215-4cce-b8f3-1a46126aeb52
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8’Îèü1J$45e8dfe3-a8ba-4937-add5-a19f50d294c8
 ~
-java:S3655S"6Call "student.isPresent()" before accessing the value.(ßö“äøÿÿÿÿ8‚’Îèü1J$cafb1bad-c578-4fff-8ae0-e324190dcf0f
+java:S3655`"6Call "student.isPresent()" before accessing the value.(ßö“äøÿÿÿÿ8‚’Îèü1J$fb9d5377-d294-425a-b799-3977ac2fef10
+~
+java:S3655S"6Call "student.isPresent()" before accessing the value.(ßö“äøÿÿÿÿ8‚ö±œı1J$1586c276-0843-485d-beb2-9ccd5bd1d612
 
-java:S1192="MDefine a constant instead of duplicating this literal "errorMessage" 5 times.(–¤ÁÑ8„’Îèü1J$e7309ac9-734d-4194-92e5-2de1ccaccf06
+java:S1192="MDefine a constant instead of duplicating this literal "errorMessage" 5 times.(–¤ÁÑ8„’Îèü1J$26fc57b9-ccbe-48b9-9e13-e50221e2be01
 Ÿ
-java:S1192>"WDefine a constant instead of duplicating this literal "/informationUpdate.jsp" 6 times.(âŸÆ¦ÿÿÿÿÿ8„’Îèü1J$b3020333-c28c-415c-9099-d4b75d00cae9
+java:S1192>"WDefine a constant instead of duplicating this literal "/informationUpdate.jsp" 6 times.(âŸÆ¦ÿÿÿÿÿ8„’Îèü1J$c445fd1b-0a8a-4e67-98c4-6cc49cbb9efd
 w
-java:S1144$"4Remove this unused private "getResponseHtml" method.(ììä¸8†’Îèü1J$15217f6f-8134-41df-893b-d29678cf885f
+java:S1144$"4Remove this unused private "getResponseHtml" method.(ììä¸8†’Îèü1J$2ae0c3d8-115d-4d2d-bada-37d0513b8f1d
 ´
-java:S1989/"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8Š’Îèü1J$ee7c9f78-f02a-45a8-9e1e-deb5655b7fbf
-ƒ	java:S1251"<This block of commented-out lines of code should be removed.(‰¦—äúÿÿÿÿ8‹’Îèü1J$c87c5300-8db5-4968-953d-dfbad58b6ec2
+java:S1989/"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8Š’Îèü1J$252a0089-8172-420e-b8a9-b1f49c265fc7
+ƒ	java:S1251"<This block of commented-out lines of code should be removed.(‰¦—äúÿÿÿÿ8‹’Îèü1J$64027247-a422-4ef9-9202-c4712b3f398e
 ©
-java:S1989>"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8’Îèü1J$fbb8895f-7aea-425a-9f92-7f594f540db6
-~	java:S125O"<This block of commented-out lines of code should be removed.(£ÔÚŒ8’Îèü1J$2b595de3-5d3d-4b18-97ca-c98f6af28e05
+java:S1989>"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8’Îèü1J$65d1175d-7ee5-4c88-b4fb-a0d30cc9ed4d
+~	java:S125O"<This block of commented-out lines of code should be removed.(£ÔÚŒ8’Îèü1J$e48f5540-c881-48fb-b3c8-a571b19cb03d
 
-java:S1155R">Use isEmpty() to check whether the collection is empty or not.(¨àÎ8’Îèü1J$eb2789ad-1534-4851-869d-35e5d50c5c19
+java:S1155R">Use isEmpty() to check whether the collection is empty or not.(¨àÎ8’Îèü1J$71a09167-e9cc-460e-a186-69be9a80e513
 ©
-java:S1989f"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8‘’Îèü1J$62ec3143-890a-4a1c-9055-88fcb0f2a636
-m	java:S106h"+Replace this use of System.out by a logger.(¾­Ì’8‘’Îèü1J$9e928d42-0716-43fe-a2a8-4af882af1086
+java:S1989k"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8‘’Îèü1J$0740987d-caf7-4629-8753-86140e68615c
+m	java:S106m"+Replace this use of System.out by a logger.(¾­Ì’8‘’Îèü1J$0892eae6-80e7-462e-b587-316eec339e4d
 ©
-java:S1989o"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8’’Îèü1J$4a06f530-6624-4d2f-b2f6-c9c05ee9d840
-“
-java:S1989}"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8“’Îèü1J$39f98054-da0d-41ad-9d01-0331fc263302
+java:S1989t"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(âŸÆ¦ÿÿÿÿÿ8’’Îèü1J$2057f6c9-1dc8-4c10-ba11-45e9a5062ee3
+”
+java:S1989‚"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8“’Îèü1J$dfd8bd4c-97f3-4ec3-9c7b-98fdd9b2d522
 …
-java:S1128"BRemove this unused import 'javax.imageio.stream.ImageInputStream'.(Ç®ô8“’Îèü1J$77d8481f-29ad-4765-b1b8-528c4dafbe69
+java:S1128"BRemove this unused import 'javax.imageio.stream.ImageInputStream'.(Ç®ô8“’Îèü1J$aacc3c50-21e8-4068-97cd-8da39779c523
 s
-java:S1128"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8“’Îèü1J$8cfafe42-6539-4b24-93d0-66d3c8afca7b
+java:S1128"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8“’Îèü1J$cf7b1d79-ac5c-4489-87ad-b93aeb610f95
 r
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8“’Îèü1J$ee58a6a9-1b99-46c7-8ef6-50d01c69fe75
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8“’Îèü1J$67e91e16-b955-4993-b93b-6fb761469b94

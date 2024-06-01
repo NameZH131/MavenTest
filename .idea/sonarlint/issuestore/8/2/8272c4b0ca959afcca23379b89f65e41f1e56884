@@ -1,9 +1,26 @@
 
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(â¤¤
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ
-‡
-java:S1989"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ
-k
-java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(ïô†úÿÿÿÿ
-f
-java:S1989."PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(â¤¤8Å™š«ı1J$72bc6688-a5e1-4805-85aa-5b723061b401
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„ÌÓ8Æ™š«ı1J$6ee07cca-9396-425d-91e2-e79dc69a3699
+	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ç™š«ı1J$802713c2-d47e-4a22-ac81-fcc70368d7a5
+w
+java:S1144"4Remove this unused private "getResponseHtml" method.(ììä¸8É™š«ı1J$40fc1caf-00af-4a48-b997-00117965a7b2
+´
+java:S1989!"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8Ë™š«ı1J$56fea3d2-b80f-41af-8043-fd5e08849948
+˜
+java:S1989""PHandle the following exception that could be thrown by "getWriter": IOException.(ïô†úÿÿÿÿ8Ë™š«ı1J$4a451dc9-087c-4d09-8587-0977fd938382
+~	java:S125%"<This block of commented-out lines of code should be removed.(Ì§Ü8Ì™š«ı1J$91b07e4a-1488-437e-9d0a-bf0a46de1768
+m	java:S1062"+Replace this use of System.out by a logger.(Äğ¿“8Ì™š«ı1J$82a1781c-30d5-49a9-b8ac-4d4acde56db1
+ƒ	java:S1254"<This block of commented-out lines of code should be removed.(şĞåäúÿÿÿÿ8¢å«ı1J$b8969b7f-5149-432b-9b56-4485dc597502
+l	java:S106;"+Replace this use of System.out by a logger.(ÁØ”8Î™š«ı1J$72444074-7267-4ba7-9a47-ecdfd23dabde
+©
+java:S1989="aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(éûà÷üÿÿÿÿ8Î™š«ı1J$634172b1-31d3-44b2-a064-81cdd663e3de
+‰
+java:S1989@"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8Î™š«ı1J$92236a0d-4ff8-42ee-9080-6a4b04d27494
+¤
+java:S1989C"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ôª¥‹8Ï™š«ı1J$f679363f-387e-489d-a116-41cd2e32007f
+©
+java:S1989G"aHandle the following exceptions that could be thrown by "include": ServletException, IOException.(ËßìÅøÿÿÿÿ8Ï™š«ı1J$2afb62fe-4993-4d0a-af4e-fe2148c317ef
+“
+java:S1989U"PHandle the following exception that could be thrown by "sendError": IOException.(’Ü¶†8Ñ™š«ı1J$f8fca4c3-6592-4ed7-8c32-ccd39b888038
+
+java:S1128"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼8Ñ™š«ı1J$52032d13-7dc7-49af-80b3-b43ad3add2ae

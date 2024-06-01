@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@include file="navigationBar.jsp" %>
+
 <html>
 <head>
     <title>学生成绩信息录入修改</title>
@@ -48,12 +48,12 @@
 
                     // 如果选项的值与被选中的值相同，则禁用或删除该选项
                     if (option.value === selectedValue) {
-                        option.disabled = true;
+                        // option.disabled = true;
                         // 或者使用以下代码删除该选项
                         // option.parentNode.removeChild(option);
                     } else {
                         // 如果之前被禁用了，现在需要重新启用
-                        option.disabled = false;
+                        // option.disabled = false;
                     }
                 }
             }
@@ -64,6 +64,8 @@
 </head>
 <body>
 <h1>Information updating</h1>
+<%--导航栏--%>
+<%@include file="navigationBar.jsp" %>
 <div style="width:100%;height:100%;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);" class="div-NormalStyle">
     <div style="width:30%;" class="div-NormalStyle">
         <form action="${pageContext.request.contextPath}/informationUpdate_search" method="get">
@@ -81,7 +83,7 @@
     </div>
     <%--    div左对齐--%>
     <div style="width:65%; float: left;" class="div-NormalStyle">
-        <p class="font-face" style="color:pink;">Student Course Information: ${requestScope.student.sName}有${requestScope.serveList.size()}门课程</p>
+        <p class="font-face" style="color:pink;">Student Course Information: ${requestScope.student.sName}课程数量${requestScope.serveList.size()}</p>
         <div style="width:100%;box-shadow: none" class="flex-container div-NormalStyle" >
             <c:forEach items="${requestScope.serveList}" var="serve" varStatus="loop">
                 <div class="div-NormalStyle">
@@ -134,7 +136,7 @@
         </div>
     </div>
     <div style="width: 35%;float:right;" class="div-NormalStyle">
-        <form action="${pageContext.request.contextPath}/informationUpdate" method="get">
+        <form action="${pageContext.request.contextPath}/informationUpdate" method="get" onsubmit="return confirmQuery()">
             <table>
                 <tr>
                     <td colspan="4">
@@ -165,7 +167,7 @@
                 </c:forEach>
                 <tr>
                     <td colspan="4">
-                        <input type="submit" value="更新选课配置" onclick="confirmQuery()">
+                        <input type="submit" value="更新选课配置">
                     </td>
                 </tr>
                 <p class="font-face" style="color:#ff3edf;">${requestScope.errorMessageForUpdate}</p>

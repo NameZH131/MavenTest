@@ -1,15 +1,15 @@
 
 
-java:S1192#"GDefine a constant instead of duplicating this literal "c_name" 3 times.(ô×Ø´ûÿÿÿÿ8ôĞıæü1J$fa4a4647-5953-4d09-8ab1-2e8d21923acb
+java:S1192#"GDefine a constant instead of duplicating this literal "c_name" 3 times.(ô×Ø´ûÿÿÿÿ8ç€İ¥ı1J$ceb4b7e6-5021-4d2d-bbab-4e76f4866535
 b
-java:S6905"Don't use the query "SELECT *".(û°®ß8ùĞıæü1J$49b0bf84-809a-4259-a286-24b92b0190c9
-m	java:S106'"+Replace this use of System.out by a logger.(İ½‹¡8úĞıæü1J$b75dd30a-80e5-454d-86cb-2246cdf241fa
+java:S6905"Don't use the query "SELECT *".(û°®ß8ë€İ¥ı1J$7f281b46-adb2-4e65-ab70-6b55d2eaf2eb
+m	java:S106'"+Replace this use of System.out by a logger.(İ½‹¡8ë€İ¥ı1J$114a0d2b-cb9e-4044-bc85-803b2b311e05
 b
-java:S69057"Don't use the query "SELECT *".(À­Òö8úĞıæü1J$564a4395-51e4-4216-827e-fa2e4f41bfb3
-l	java:S106B"+Replace this use of System.out by a logger.(¡å˜v8ûĞıæü1J$83362098-f2b2-408c-aa6b-b8d02ae02588
+java:S69057"Don't use the query "SELECT *".(À­Òö8ì€İ¥ı1J$cfd7b060-18fc-4687-a8ee-9fb6967f88b9
+l	java:S106B"+Replace this use of System.out by a logger.(¡å˜v8í€İ¥ı1J$58531353-ec02-468a-b15a-534d14dba608
 b
-java:S6905K"Don't use the query "SELECT *".(®ÈàŒ8üĞıæü1J$afd17415-e5ee-40c2-ba3f-aafdb37334ec
+java:S6905K"Don't use the query "SELECT *".(®ÈàŒ8í€İ¥ı1J$6f4a4519-7320-4f1d-8ae6-86db6012c1f6
 w
-java:S2695b"/This "PreparedStatement" only has 2 parameters.(¿¥’¾ùÿÿÿÿ8ÿĞıæü1J$63ee3b1d-fce0-4acf-8e5f-dfdd108a7d3a
+java:S2695b"/This "PreparedStatement" only has 2 parameters.(¿¥’¾ùÿÿÿÿ8î€İ¥ı1J$311be5e6-2be7-473f-9b64-34b57cabf8eb
 q
-java:S2695s"/This "PreparedStatement" only has 2 parameters.(›Çæp8€Ñıæü1J$87c4d14d-0bbb-4e48-af43-e1f7d69f45bf
+java:S2695s"/This "PreparedStatement" only has 2 parameters.(›Çæp8ï€İ¥ı1J$5975476d-f93e-4b5f-a0b9-859320d86cc3

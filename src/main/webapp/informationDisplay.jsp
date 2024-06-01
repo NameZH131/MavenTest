@@ -74,12 +74,12 @@
             <td><input type="text" name="sName" value="${requestScope.student.sName}" readonly></td>
         </tr>
         <tr>
-            <td><label>学生性别:</label></td>
-            <td><input type="text" name="sGender" value="${requestScope.student.sGender}" readonly></td>
-        </tr>
-        <tr>
             <td><label>学生年龄:</label></td>
             <td><input type="text" name="sAge" value="${ requestScope.student.sAge}" readonly></td>
+        </tr>
+        <tr>
+            <td><label>学生性别:</label></td>
+            <td><input type="text" name="sGender" value="${requestScope.student.sGender}" readonly></td>
         </tr>
         <tr>
             <td><label>学生年级:</label></td>

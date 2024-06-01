@@ -5,7 +5,6 @@ import bean.Serve;
 import service.ServeService;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -42,14 +41,37 @@ public class informationUpdate extends HttpServlet {
         String[] checkboxCoursescId = request.getParameterValues("checkboxCourse");
         String[] selectTeacherstId = request.getParameterValues("selectTeacher");
         String[] coursesScore = request.getParameterValues("score");
-        if (sId != null || checkboxCoursescId != null || selectTeacherstId != null) {
-            try {
-                new ServeService().deleteServe(Integer.parseInt(sId));
-            } catch (NumberFormatException e) {
-                System.out.println("删除学生原来all课程计划失败！");
-                out.println("删除学生原来all课程计划失败！");
-                response.setHeader("Refresh", "2;url=/informationUpdate.jsp");
-                throw new RuntimeException(e);
+        // 检查必要参数是否为空
+        if (sId == null) {
+            request.setAttribute("errorMessageForUpdate", "请先进行学生ID查询");
+            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+//            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid parameters.");
+            return;
+        }
+        
+        /**
+         *
+         *   更新课程不能必须先清空课程，不论是否有勾选课程选择（课程数组不论==null）
+         */
+        try {
+            new ServeService().deleteServe(Integer.parseInt(sId));
+        } catch (NumberFormatException e) {
+            System.out.println("删除失败，查询系统过程Bug");
+            request.setAttribute("errorMessage", "删除失败，查询系统过程Bug");
+            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+            throw new RuntimeException(e);
+        }
+
+        if (checkboxCoursescId == null) {
+            request.setAttribute("successMessageForUpdate", "已成功清空学生课程安排");
+            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+        } else {
+            for (int i = 0; i < checkboxCoursescId.length; i++) {
+                if (checkboxCoursescId[i] == null || selectTeacherstId[i] == null) {
+                    request.setAttribute("errorMessageForUpdate", "课程参数无效");
+                    request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                    System.out.println("更新课程参数无效");
+                }
             }
             try {
                 for (int i = 0; i < checkboxCoursescId.length; i++) {
@@ -59,23 +81,17 @@ public class informationUpdate extends HttpServlet {
                     new ServeService().addServe(new Serve(Integer.parseInt(sId), Integer.parseInt(checkboxCoursescId[i]), Integer.parseInt(selectTeacherstId[i]), coursesScore[i]));
                 }
             } catch (Exception e) {
-                System.out.println("重新安排学生课程计划失败！");
-                out.println("重新安排学生课程计划失败！");
-                response.setHeader("Refresh", "2;url=/informationUpdate.jsp");
+                System.out.println("最终课程更新失败");
+                request.setAttribute("errorMessageForUpdate", "最终课程更新失败");
                 throw new RuntimeException(e);
             }
-            request.setAttribute("successMessageForUpdate", "更新成功");
+            request.setAttribute("successMessageForUpdate", "该学生课程安排更新成功");
             request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
-        } else {
-            System.out.println("更新" + sId + "课程参数无效");
-//            out.println("更新" + sId + "课程参数无效");
-//            五秒后请求转发
-//            response.setHeader("Refresh", "2;url=/informationUpdate.jsp");
-            request.setAttribute("errorMessageForUpdate", "请先进行学生ID查询");
-            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
-//            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid parameters.");
+
         }
+
     }
+
 
     // 处理POST请求
     @Override
@@ -89,4 +105,5 @@ public class informationUpdate extends HttpServlet {
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "An error occurred.");
         }
     }
+
 }

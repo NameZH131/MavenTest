@@ -6,11 +6,15 @@
 body {
     font-family: 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    background: url("/resource/image/wallhaven-5gzod5.jpg") repeat-x left top;
+    /*背景图片固定，图片覆盖整个页面*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url("/resource/image/wallhaven-5gzod5.jpg");
+
 
 
     /*取消页面的侧边滚动*/
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     overflow-y: auto;
 
     /*background-attachment: fixed;*/
