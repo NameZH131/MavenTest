@@ -296,10 +296,6 @@ w
 G.idea/sonarlint/issuestore/7/4/74bc132b2a7bd53bac5534dc03cd61f7b2f7a71e,a\0\a06a240c2d92eef346e9188a89e7e547654fa08f
 w
 G.idea/sonarlint/issuestore/8/2/8272c4b0ca959afcca23379b89f65e41f1e56884,3\0\30b412891416ad697d611bbb688b9fa841abbc14
-K
-src/main/webapp/indeaea.jsp,a\6\a62b79183c6a0fb27e9fe14f631b96bcaf52d1a1
->
-src/READEME.md,1\5\1507bd7a2ad45e7eedbfe4f1bd26ec628ba91c5e
 :
 
 READEME.md,6\e\6ede8c0ad6f803bf37fae66fea88d9bdc860d275

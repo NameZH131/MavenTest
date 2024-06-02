@@ -27,38 +27,39 @@
 
 
 
-    <script>
-        function updateSelectOptions(selectedSelect) {
-            // 获取被选中的选项的值
-            const selectedValue = selectedSelect.value;
+<%--    <script>--%>
+<%--        function updateSelectOptions(selectedSelect) {--%>
+<%--            // 获取被选中的选项的值--%>
+<%--            const selectedValue = selectedSelect.value;--%>
 
-            // 遍历所有下拉框
-            const allSelects = document.getElementsByName('selectTeacher');
-            for (let i = 0; i < allSelects.length; i++) {
-                const select = allSelects[i];
+<%--            // 遍历所有下拉框--%>
+<%--            const allSelects = document.getElementsByName('selectTeacher');--%>
+<%--            for (let i = 0; i < allSelects.length; i++) {--%>
+<%--                const select = allSelects[i];--%>
 
-                // 如果是当前被选中的下拉框，则跳过
-                if (select === selectedSelect) {
-                    continue;
-                }
+<%--                // 如果是当前被选中的下拉框，则跳过--%>
+<%--                if (select === selectedSelect) {--%>
+<%--                    continue;--%>
+<%--                }--%>
 
-                // 遍历下拉框中的所有选项
-                for (let j = 0; j < select.options.length; j++) {
-                    const option = select.options[j];
+<%--                // 遍历下拉框中的所有选项--%>
+<%--                for (let j = 0; j < select.options.length; j++) {--%>
+<%--                    const option = select.options[j];--%>
 
-                    // 如果选项的值与被选中的值相同，则禁用或删除该选项
-                    if (option.value === selectedValue) {
-                        // option.disabled = true;
-                        // 或者使用以下代码删除该选项
-                        // option.parentNode.removeChild(option);
-                    } else {
-                        // 如果之前被禁用了，现在需要重新启用
-                        // option.disabled = false;
-                    }
-                }
-            }
-        }
-    </script>
+<%--                    // 如果选项的值与被选中的值相同，则禁用或删除该选项--%>
+<%--                    if (option.value === selectedValue) {--%>
+<%--                        // option.disabled = true;--%>
+<%--                        // 或者使用以下代码删除该选项--%>
+<%--                        // option.parentNode.removeChild(option);--%>
+<%--                    } else {--%>
+<%--                        // 如果之前被禁用了，现在需要重新启用--%>
+<%--                        // option.disabled = false;--%>
+<%--                    }--%>
+<%--                }--%>
+<%--            }--%>
+<%--        }--%>
+<%--    </script>--%>
+
 <%--    引入脚本--%>
     <script src="${request.contextPath}/script/script.js"></script>
 </head>
@@ -109,7 +110,7 @@
                         </tr>
                         <tr>
                             <td><label for="tId${loop.index}"> Teacher ID:</label></td>
-                            <td><input type="text" id="tId${loop.index}" name="tId${loop.index}" value="${teacher.tId}"
+                            <td><input type="text" id="tId${loop.index}" name="tId${loop.index}" value="${serve.tId}"
                                        class="${loop.index}" readonly></td>
                         </tr>
                         <tr>
@@ -159,7 +160,7 @@
                         <td>
                             <select name="selectTeacher" id="selectTeacher${loop.index}" onchange="updateSelectOptions(this)">
                                 <c:forEach items="${requestScope.allTeacherList}" var="teacherList" varStatus="loop1">
-                                    <option value="${teacherList.tId}" id="">${teacherList.tId}${teacherList.tName}</option>
+                                    <option value="${teacherList.tId}" id="">${teacherList.tId}:${teacherList.tName}</option>
                                 </c:forEach>
                             </select>
                         </td>
