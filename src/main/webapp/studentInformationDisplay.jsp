@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Information displayiong</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style/style.css">
 
 
 </head>
@@ -50,7 +50,7 @@
 
 
 <div style="width:30%;" onchange="" class="div-NormalStyle">
-    <form action="/informationDisplay" method="get"><table>
+    <form action="${pageContext.request.contextPath}/studentInformationDisplay" method="get"><table>
         <tr>
             <td><label for="sId">Student ID:</label></td>
             <td> <input type="text" id="sId" name="sId" ></td>

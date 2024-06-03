@@ -16,21 +16,18 @@ import service.ServeService;
 import service.StudentService;
 import service.TeacherService;
 
-import javax.imageio.stream.ImageInputStream;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 
-@WebServlet(name = "informationUpdate_search", urlPatterns = "/informationUpdate_search")
-public class informationUpdate_search extends HttpServlet {
+@WebServlet(name = "courseArrangeInformationUpdate_search", urlPatterns = "/courseArrangeInformationUpdate_search")
+public class courseArrangeInformationUpdate_search extends HttpServlet {
 
     // 用于构建响应的HTML内容，提高代码的可读性和可维护性
     private String getResponseHtml() {
@@ -59,14 +56,14 @@ public class informationUpdate_search extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
                 request.setAttribute("errorMessage", "请输入正确的学号");
-                request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
             }
             // 查询学生信息Service层
             try {
                 Optional<Student> student = new StudentService().getStudentById(sId);
                 if (!student.isPresent()) {
                     request.setAttribute("errorMessage", "Id不存在哎");
-                    request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                    request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
                 }
                 List<Serve> serveList = new ServeService().getServesByStudentIdId(sId);
                 List<Course> courseList = new CourseService().getCoursesByStudentId(sId);
@@ -89,7 +86,7 @@ public class informationUpdate_search extends HttpServlet {
                     request.setAttribute("allCourseList", allCourseList);
                     request.setAttribute("allTeacherList",allTeacherList);
 
-                    request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                    request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
                 } else {
                     request.setAttribute("errorMessage", "该学生没有选课");
                     
@@ -97,14 +94,14 @@ public class informationUpdate_search extends HttpServlet {
 
                     request.setAttribute("allCourseList", allCourseList);
                     request.setAttribute("allTeacherList",allTeacherList);
-                    request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                    request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
                 }
 
 
             } catch (Exception e) {
                 request.setAttribute("errorMessage", "查询学生信息失败");
                 //请求转发
-                request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
 
                 System.out.println("查询学生信息失败 Servlet: informationUpdate");
                 e.printStackTrace();
@@ -113,7 +110,7 @@ public class informationUpdate_search extends HttpServlet {
 
         } else {
             request.setAttribute("errorMessage", "Id在我的预料之外");
-            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+            request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
         }
 
     }

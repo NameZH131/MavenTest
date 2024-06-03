@@ -26,7 +26,7 @@ public class StudentDao {
             while (rs.next()) {
                 Student student = new Student();
                 student.setsId(rs.getInt("s_id"));
-                student.setPassword(rs.getString("s_password"));
+                student.setsPassword(rs.getString("s_password"));
                 student.setsName(rs.getString("s_name"));
                 student.setsAge(rs.getInt("s_age"));
                 student.setsGender(rs.getString("s_gender"));

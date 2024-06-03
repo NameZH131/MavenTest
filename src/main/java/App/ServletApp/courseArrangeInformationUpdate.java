@@ -13,8 +13,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet(name = "informationUpdate", urlPatterns = "/informationUpdate")
-public class informationUpdate extends HttpServlet {
+@WebServlet(name = "courseArrangeInformationUpdate", urlPatterns = "/courseArrangeInformationUpdate")
+public class courseArrangeInformationUpdate extends HttpServlet {
 
     // 用于构建响应的HTML内容，提高代码的可读性和可维护性
     private String getResponseHtml() {
@@ -44,7 +44,7 @@ public class informationUpdate extends HttpServlet {
         // 检查必要参数是否为空
         if (sId == null) {
             request.setAttribute("errorMessageForUpdate", "请先进行学生ID查询");
-            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+            request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
 //            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid parameters.");
             return;
         }
@@ -58,18 +58,18 @@ public class informationUpdate extends HttpServlet {
         } catch (NumberFormatException e) {
             System.out.println("删除失败，查询系统过程Bug");
             request.setAttribute("errorMessage", "删除失败，查询系统过程Bug");
-            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+            request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
             throw new RuntimeException(e);
         }
 
         if (checkboxCoursescId == null) {
             request.setAttribute("successMessageForUpdate", "已成功清空学生课程安排");
-            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+            request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
         } else {
             for (int i = 0; i < checkboxCoursescId.length; i++) {
                 if (checkboxCoursescId[i] == null || selectTeacherstId[i] == null) {
                     request.setAttribute("errorMessageForUpdate", "课程参数无效");
-                    request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+                    request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
                     System.out.println("更新课程参数无效");
                 }
             }
@@ -86,7 +86,7 @@ public class informationUpdate extends HttpServlet {
                 throw new RuntimeException(e);
             }
             request.setAttribute("successMessageForUpdate", "该学生课程安排更新成功");
-            request.getRequestDispatcher("/informationUpdate.jsp").forward(request, response);
+            request.getRequestDispatcher("/courseArrangeInformationUpdate.jsp").forward(request, response);
 
         }
 

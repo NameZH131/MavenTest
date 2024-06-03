@@ -22,11 +22,16 @@ public class Student {
         this.sGrade = sGrade;
     }
 
+    public Student(int sId, String sPassword) {
+        this.sId = sId;
+        this.sPassword = sPassword;
+    }
+
     public String getPassword() {
         return sPassword;
     }
 
-    public void setPassword(String password) {
+    public void setsPassword(String password) {
         this.sPassword = password;
     }
 

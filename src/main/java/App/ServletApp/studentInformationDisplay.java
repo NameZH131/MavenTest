@@ -7,14 +7,8 @@ package App.ServletApp;
  * To change this template use File | Settings | File Templates.
  */
 
-import bean.Course;
-import bean.Serve;
 import bean.Student;
-import bean.Teacher;
-import service.CourseService;
-import service.ServeService;
 import service.StudentService;
-import service.TeacherService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,12 +16,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 import java.util.Optional;
 
 
-@WebServlet(name = "informationDisplay", urlPatterns = "/informationDisplay")
-public class informationDisplay extends HttpServlet {
+@WebServlet(name = "studentInformationDisplay", urlPatterns = "/studentInformationDisplay")
+public class studentInformationDisplay extends HttpServlet {
 
     // 用于构建响应的HTML内容，提高代码的可读性和可维护性
     private String getResponseHtml() {
@@ -61,7 +54,7 @@ public class informationDisplay extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
                 request.setAttribute("errorMessage", "请输入正确的学号");
-                request.getRequestDispatcher("/informationDisplay.jsp").forward(request, response);
+                request.getRequestDispatcher("/studentInformationDisplay.jsp").forward(request, response);
             }
 
 
@@ -78,23 +71,23 @@ public class informationDisplay extends HttpServlet {
 //                        request.setAttribute("course",Optcourse.get());
 //                        request.setAttribute("teacher",Optteacher.get());
 //                        //请求转发
-//                        request.getRequestDispatcher("/informationDisplay.jsp").forward(request,response);
+//                        request.getRequestDispatcher("/studentInformationDisplay.jsp").forward(request,response);
 //                    }
 //                }
                 if(Optstudent.isPresent())
                 request.setAttribute("student",student);
-                request.getRequestDispatcher("/informationDisplay.jsp").forward(request,response);
+                request.getRequestDispatcher("/studentInformationDisplay.jsp").forward(request,response);
              } catch (Exception e) {
                 request.setAttribute("errorMessage", "Id不存在哎");
                 //请求转发
-                request.getRequestDispatcher("/informationDisplay.jsp").forward(request, response);
+                request.getRequestDispatcher("/studentInformationDisplay.jsp").forward(request, response);
 
                 System.out.println("查询学生信息失败 Servlet: informationDisplay");
                 e.printStackTrace();
             }
         } else {
             request.setAttribute("errorMessage", "Id在我的预料之外");
-            request.getRequestDispatcher("/informationDisplay.jsp").forward(request, response);
+            request.getRequestDispatcher("/studentInformationDisplay.jsp").forward(request, response);
         }
 
 

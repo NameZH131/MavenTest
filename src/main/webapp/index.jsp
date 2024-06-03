@@ -1,11 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" isELIgnored="false"%>
 
 
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>mainUi</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style/style.css">
 </head>
 <body>
 <!--    建立一个标准的学生系统主页-->
@@ -14,14 +14,14 @@
     <div style="width: 60px; display:inline-block;background-image: none;">
         <table>
             <tr>
-                <td><a href="/logIn.jsp">登录</a></td>
+                <td><a href="${pageContext.request.contextPath}/logIn.jsp">登录</a></td>
             </tr>
         </table>
     </div>
     <div style="width: 60px; display: inline-block;background-image: none;">
         <table>
             <tr>
-                <td><a href="/register.jsp">注册</a></td>
+                <td><a href="${pageContext.request.contextPath}/register.jsp">注册</a></td>
             </tr>
         </table>
     </div>

@@ -61,7 +61,7 @@
 <%--    </script>--%>
 
 <%--    引入脚本--%>
-    <script src="${request.contextPath}/script/script.js"></script>
+    <script src="${pageContext.request.contextPath}/script/script.js"></script>
 </head>
 <body>
 <h1>Information updating</h1>
@@ -69,7 +69,7 @@
 <%@include file="navigationBar.jsp" %>
 <div style="width:100%;height:100%;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);" class="div-NormalStyle">
     <div style="width:30%;" class="div-NormalStyle">
-        <form action="${pageContext.request.contextPath}/informationUpdate_search" method="get">
+        <form action="${pageContext.request.contextPath}/courseArrangeInformationUpdate_search" method="get">
             <table>
                 <tr>
                     <td><label for="sId">Student ID:</label></td>
@@ -137,7 +137,7 @@
         </div>
     </div>
     <div style="width: 35%;float:right;" class="div-NormalStyle">
-        <form action="${pageContext.request.contextPath}/informationUpdate" method="get" onsubmit="return confirmQuery()">
+        <form action="${pageContext.request.contextPath}/courseArrangeInformationUpdate" method="get" onsubmit="return confirmQuery()">
             <table>
                 <tr>
                     <td colspan="4">

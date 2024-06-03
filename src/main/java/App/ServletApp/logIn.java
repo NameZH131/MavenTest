@@ -1,13 +1,12 @@
 package App.ServletApp;
 
+import bean.Student;
 import service.StudentService;
 import util.PasswordHashing;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 
 
@@ -51,9 +50,9 @@ public class logIn extends HttpServlet {
 //            request.setAttribute("sGrade", grade);
 //            request.setAttribute("sPassword", password);
 
-            // 检查密码是否为数字
+            // 检查密码
             try {
-                int pint  = Math.abs(Integer.parseInt(id));// 使用Math.abs获取密码的绝对值
+                int pint  = Math.abs(Integer.parseInt(id));// 使用Math.abs获取绝对值，避免负数账户id
 //              密码转为hash数值
                 String pfromDb = PasswordHashing.hashPassword(new StudentService().getStudentPassword(pint));
                 if (pfromDb == null) {
@@ -63,6 +62,19 @@ public class logIn extends HttpServlet {
                 // 密码验证
                 if (PasswordHashing.hashPassword(password).equals(pfromDb)) {
                     request.setAttribute("successMessage", "欢迎您！😘用户id: ");
+//                    建立cookie和session
+                    HttpSession session = request.getSession();
+                    Student student=new Student();
+                    student.setsId(pint);
+                    student.setsPassword(password);
+                    session.setAttribute("user",student);
+//                   cookie,下次自动登录
+                    Cookie cookie = new Cookie("autoLogIn",pint+"."+PasswordHashing.hashPassword(password));
+                    cookie.setMaxAge(60*60*24*7);
+                    cookie.setPath(request.getContextPath());
+                    response.addCookie(cookie);
+
+
                     request.getRequestDispatcher("/mainUi.jsp").forward(request, response);
                 }
                 else {

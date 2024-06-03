@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>mainUi</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style/style.css">
 
     <style>
         .img-content{

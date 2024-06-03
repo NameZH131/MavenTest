@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>logging student data</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style/style.css">
 
     <style>
         #rotatingPlane {
@@ -31,11 +31,11 @@
 <body>
 <h1>Student Data Logging</h1>
 <p>This page is used to log student data.</p>
+<p>上下问路径：${pageContext.request.contextPath}</p>
 <!-- 要实现文本在垂直方向上居中显示，可以使用 Flexbox 布局 -->
 <div style="background-image: none;">
     <form action="${pageContext.request.contextPath}/logIn" method="get" style="border-radius:6%">
         <table>
-            <p>${pageContext.request.contextPath}</p>
             <tr>
                 <div id="rotatingPlane" style="display: flex;
     justify-content: center;

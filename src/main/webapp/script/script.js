@@ -48,7 +48,7 @@ function confirmQuery() {
         alert("你取消了提交，此次提交失败");
         return false;
         // 中断表单提交，重定向到首页
-        // window.location.href = "/informationUpdate.jsp";
+        // window.location.href = "/courseArrangeInformationUpdate.jsp";
 
     }
 }
