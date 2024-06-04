@@ -40,7 +40,7 @@
                 <div id="rotatingPlane" style="display: flex;
     justify-content: center;
     align-items: center;
-    ;text-shadow: 0 0 15px rgb(255,214,243);background-image: none">Welcome to the item of My</div>
+    ;text-shadow: 0 0 15px rgb(255,214,243);background-image: none">Thanks to the Coding World!</div>
             </tr>
             <tr>
                 <td><label for="id">ID:</label></td>
