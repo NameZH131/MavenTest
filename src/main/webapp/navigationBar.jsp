@@ -33,7 +33,7 @@
     <a href="${pageContext.request.contextPath}/logOut">退出登录</a>
     <%--    用户头像和名字--%>
     <span style="float: right;">
-        <a href="error.jsp"> <img src="${pageContext.request.contextPath}/resource/image/navigationBar/OIP-C.jpg" alt="图标" width="82px"></a>
+        <a href="${pageContext.request.contextPath}/studentInformationAlter.jsp"> <img src="${pageContext.request.contextPath}/resource/image/navigationBar/OIP-C.jpg" alt="图标" width="82px"></a>
         <span style="font-size: 20px;">${sessionScope.user.sName}</span>
   </span>
 

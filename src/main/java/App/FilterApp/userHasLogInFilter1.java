@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 //想阻止没登录的人
 //@WebFilter(urlPatterns = "/*")
-@WebFilter(urlPatterns = {"/logOut","/studentInformationDisplay","/courseArrangeInformationUpdate","/courseArrangeInformationUpdate_search","/mainUi.jsp","/navigation.jsp","/studentInformationDisplay.jsp","/courseArrangeInformationUpdate.jsp"})
+@WebFilter(urlPatterns = {"/logOut","/studentInformationDisplay","/courseArrangeInformationUpdate","/courseArrangeInformationUpdate_search","/mainUi.jsp","/navigationBar.jsp","/studentInformationDisplay.jsp","/courseArrangeInformationUpdate.jsp"})
 public class userHasLogInFilter1 implements Filter {
 
     public void init(FilterConfig filterConfig) throws ServletException {

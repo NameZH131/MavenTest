@@ -29,7 +29,7 @@
                 <a href="${pageContext.request.contextPath}/error.jsp">
                     <img src="${pageContext.request.contextPath}/resource/image/navigationBar/OIP-C.jpg" class="img-content" alt="图片">
                 </a>
-            </div>6
+            </div>
         </div>
     </c:forEach>
 </div>
