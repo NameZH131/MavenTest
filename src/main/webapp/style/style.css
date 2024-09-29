@@ -87,7 +87,7 @@ div {
     padding: 30px;
     margin: 0 auto;
     height: auto;
-    background-image: url("/resource/image/wallhaven-5gzod5.jpg");
+    background-image: url("../resource/image/wallhaven-5gzod5.jpg");
     background-color: #ffd8d829;
     box-shadow: 0 0 8px #ffffff;
     border-radius: 6%;

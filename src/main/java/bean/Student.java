@@ -27,7 +27,7 @@ public class Student {
         this.sPassword = sPassword;
     }
 
-    public String getPassword() {
+    public String getsPassword() {
         return sPassword;
     }
 

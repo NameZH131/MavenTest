@@ -10,7 +10,6 @@ import javax.servlet.http.*;
 import java.io.IOException;
 
 
-
 @WebServlet(name = "logIn", urlPatterns = "/logIn")
 public class logIn extends HttpServlet {
 
@@ -29,7 +28,6 @@ public class logIn extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
 //        PrintWriter out = response.getWriter();
-
 //             使用StringBuilder来提高性能
 //        String responseHtml = getResponseHtml();
 //        out.println(responseHtml);
@@ -52,7 +50,7 @@ public class logIn extends HttpServlet {
 
             // 检查密码
             try {
-                int pint  = Math.abs(Integer.parseInt(id));// 使用Math.abs获取绝对值，避免负数账户id
+                int pint = Math.abs(Integer.parseInt(id));// 使用Math.abs获取绝对值，避免负数账户id
 //              密码转为hash数值
                 String pfromDb = PasswordHashing.hashPassword(new StudentService().getStudentPassword(pint));
                 if (pfromDb == null) {
@@ -64,20 +62,32 @@ public class logIn extends HttpServlet {
                     request.setAttribute("successMessage", "欢迎您！😘用户id: ");
 //                    建立cookie和session
                     HttpSession session = request.getSession();
-                    Student student=new Student();
+                    Student student = new Student();
                     student.setsId(pint);
                     student.setsPassword(password);
-                    session.setAttribute("user",student);
+                    session.setAttribute("user", student);
 //                   cookie,下次自动登录
-                    Cookie cookie = new Cookie("autoLogIn",pint+"."+PasswordHashing.hashPassword(password));
-                    cookie.setMaxAge(60*60*24*7);
+                    // 创建一个名为"autoLogIn"的 Cookie 对象，其值为 pint+"."+PasswordHashing.hashPassword(password)
+                    Cookie cookie = new Cookie("autoLogIn", pint + "." + PasswordHashing.hashPassword(password));
+                    // 设置 Cookie 的最大存活时间为 7 天
+                    cookie.setMaxAge(60 * 60 * 24 * 7);
+                    /**
+                     * 设置Cookie的域名属性。
+                     * 通过将域名设置为".idea.com"，使得该Cookie适用于所有idea.com旗下的子域名。
+                     * 这是一种常见的实践，可以确保Cookie在多个相关联的子域名下都能被识别和使用。
+                     *
+                     * @param domain Cookie的有效域名，使用".idea.com"的形式来表示适用于所有idea.com子域名。
+                     */
+//                   cookie.setDomain(".idea.com");
+                    // 设置 Cookie 的路径
                     cookie.setPath(request.getContextPath());
+                    // 将 Cookie 添加到响应中
                     response.addCookie(cookie);
 
 
+
                     request.getRequestDispatcher("/mainUi.jsp").forward(request, response);
-                }
-                else {
+                } else {
                     request.setAttribute("errorMessage", "密码错误！");
                     request.getRequestDispatcher("/logIn.jsp").forward(request, response);
                 }
@@ -87,9 +97,9 @@ public class logIn extends HttpServlet {
             }
 
         } else {
-                // 若参数为空，则返回错误信息
-                request.setAttribute("errorMessage", "请输入用户名和密码！");
-                request.getRequestDispatcher("/logIn.jsp").include(request, response);
+            // 若参数为空，则返回错误信息
+            request.setAttribute("errorMessage", "请输入用户名和密码！");
+            request.getRequestDispatcher("/logIn.jsp").include(request, response);
         }
 
     }

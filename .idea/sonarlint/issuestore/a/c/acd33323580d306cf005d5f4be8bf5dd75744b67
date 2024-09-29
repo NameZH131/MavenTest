@@ -1,29 +1,31 @@
 
-è	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÃÑ°∏8€‰—˝1J$bfac272c-1c1f-4276-a42e-7166d6a8e844
-ú	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚ÑÃ”8€‰—˝1J$00d0e546-940a-4d0a-b9bd-57a82adf9c3e
+è	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÃÑ°∏8ßË–∂Ç2J$a5763b7a-4068-4a66-8f1a-7133d0b065c0
+ú	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚ÑÃ”8ßË–∂Ç2J$c0aa180a-87d8-466b-8047-904a4ef9068e
 ì
-java:S1192<"KDefine a constant instead of duplicating this literal "/logIn.jsp" 4 times.(˛è®˙˙ˇˇˇˇ8‹‰—˝1J$173b8d7b-24bd-4f47-a578-b1b448c2bdde
+java:S1192;"KDefine a constant instead of duplicating this literal "/logIn.jsp" 4 times.(˛è®˙˙ˇˇˇˇ8™Ë–∂Ç2J$471f676b-84de-47d8-bf74-cb2427597108
 ï
-java:S1192;"MDefine a constant instead of duplicating this literal "errorMessage" 4 times.(§á‹ò˝ˇˇˇˇ8‹‰—˝1J$2dd6f245-aa96-4255-9cd8-f04d9f940424
+java:S1192:"MDefine a constant instead of duplicating this literal "errorMessage" 4 times.(§á‹ò˝ˇˇˇˇ8™Ë–∂Ç2J$07854032-e3b5-4302-9605-e009a1758112
 w
-java:S1144"4Remove this unused private "getResponseHtml" method.(ÏÏ‰∏8ﬁ‰—˝1J$a021d968-cd50-45ce-aba1-9263e215a388
+java:S1144"4Remove this unused private "getResponseHtml" method.(ÏÏ‰∏8≠Ë–∂Ç2J$e81f860b-1265-4f29-ac22-fee055a8091a
 ¥
-java:S1989"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(è·Úâ¯ˇˇˇˇ8ﬂ‰—˝1J$3822fffd-074a-4f47-a94f-8b7d588a33ee
-É	java:S125"<This block of commented-out lines of code should be removed.(â¶ó‰˙ˇˇˇˇ8ﬂ‰—˝1J$d2491390-a317-4a69-8a7a-710f76a65df0
-~	java:S125""<This block of commented-out lines of code should be removed.(èÃß‹8ﬂ‰—˝1J$8660adf4-ac7d-453d-aad8-bdb9440008ae
-É	java:S125'"<This block of commented-out lines of code should be removed.(à§ÜÃ˝ˇˇˇˇ8ﬂ‰—˝1J$0ff3a0eb-5991-4b34-bee6-bc38fbb86ec1
-É	java:S125."<This block of commented-out lines of code should be removed.(‘ªò÷˛ˇˇˇˇ8ﬂ‰—˝1J$f6112f5e-86fc-4713-aa40-2bf665429f09
+java:S1989"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(è·Úâ¯ˇˇˇˇ8∞Ë–∂Ç2J$8fb40d65-6e49-4654-975c-abfa479b28fa
+É	java:S125"<This block of commented-out lines of code should be removed.(â¶ó‰˙ˇˇˇˇ8∞Ë–∂Ç2J$813fa3c4-94ba-44ad-947e-30f011751942
+É	java:S125&"<This block of commented-out lines of code should be removed.(à§ÜÃ˝ˇˇˇˇ8∞Ë–∂Ç2J$a5a20a0f-5f52-4171-89d3-51bd4138835d
+É	java:S125-"<This block of commented-out lines of code should be removed.(‘ªò÷˛ˇˇˇˇ8±Ë–∂Ç2J$efa39e05-889f-4ef6-8bc0-d26d7ed0e6f3
 ©
-java:S1989<"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˛è®˙˙ˇˇˇˇ8·‰—˝1J$3d9433b4-31f1-4528-af1b-dc72f81fd891
-_
-java:S2441F"=Make "Student" serializable or don't store it in the session.(€Ãæ∑¸ˇˇˇˇ8·Ì“Ω˛1
+java:S1989;"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˛è®˙˙ˇˇˇˇ8≥Ë–∂Ç2J$700ff23d-5e36-4e95-b143-fa3747e5f781
+Ö
+java:S2441E"=Make "Student" serializable or don't store it in the session.(€Ãæ∑¸ˇˇˇˇ8¥Ë–∂Ç2J$8f8d228f-72c6-417a-9bc7-a18da1844abb
+~	java:S125R"<This block of commented-out lines of code should be removed.(ËáÇ‚8€ÆÍ∂Ç2J$351e5c88-6127-427c-a97f-8d694fbc2548
 §
-java:S1989N"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Úë¯”8‚‰—˝1J$6a5264cf-b64d-4e8c-a32e-50158069af9d
+java:S1989Z"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Úë¯”8µË–∂Ç2J$6f58ae3d-dd36-46d8-8121-bee493514fc0
 ©
-java:S1989R"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˛è®˙˙ˇˇˇˇ8‚‰—˝1J$0cb3d978-16a4-47d8-995a-dee9c5713ef9
+java:S1989]"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˛è®˙˙ˇˇˇˇ8µË–∂Ç2J$23319c74-813e-42d7-8575-74d2726ce69b
 ©
-java:S1989V"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˛è®˙˙ˇˇˇˇ8ıÕÔå˛1J$75e89a4f-a7f0-4a8c-be7a-0ce217c00dd4
+java:S1989a"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˛è®˙˙ˇˇˇˇ8∂Ë–∂Ç2J$284a6188-5825-4204-9907-a526cbe0941c
 §
-java:S1989\"aHandle the following exceptions that could be thrown by "include": ServletException, IOException.(‚Ëπõ8‚‰—˝1J$d65cbc6a-07b4-4e3c-befe-b3ab22525ece
+java:S1989g"aHandle the following exceptions that could be thrown by "include": ServletException, IOException.(‚Ëπõ8∂Ë–∂Ç2J$f4041e73-27f0-48cb-af98-7aa35c2478a9
 ì
-java:S1989j"PHandle the following exception that could be thrown by "sendError": IOException.(í‹∂Ü8„‰—˝1J$aad58ee8-791e-43e6-bad3-7e6426a62136
+java:S1989u"PHandle the following exception that could be thrown by "sendError": IOException.(í‹∂Ü8∑Ë–∂Ç2J$e9d0180c-002f-4216-841a-5e57a761c80f
+s
+java:S1128"0Remove this unused import 'java.io.PrintWriter'.(”ﬁœ€8ÊÚ—∂Ç2J$c93b3050-e8af-485f-8ac8-8c563292b839

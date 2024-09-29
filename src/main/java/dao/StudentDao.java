@@ -46,7 +46,7 @@ public class StudentDao {
         String sql = "INSERT INTO student (s_id, s_password, s_name, s_age, s_gender, s_grade) VALUES (?, ?, ?, ?, ?, ?)";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, student.getsId());
-            ps.setString(2, student.getPassword());
+            ps.setString(2, student.getsPassword());
             ps.setString(3, student.getsName());
             ps.setInt(4, student.getsAge());
             ps.setString(5, student.getsGender());
@@ -75,15 +75,24 @@ public class StudentDao {
         }
     }
 
-    public void updateStudent(Student student) {
+    public boolean updateStudent(Student student) {
         String sql = "UPDATE student SET s_password = ?, s_name = ?, s_age = ?, s_gender = ?, s_grade = ? WHERE s_id = ?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setString(1, student.getPassword());
+            ps.setString(1, student.getsPassword());
+            ps.setString(2, student.getsName());
+            ps.setInt(3, student.getsAge());
+            ps.setString(4, student.getsGender());
+            ps.setInt(5, student.getsGrade());
+            ps.setInt(6, student.getsId());
+            ps.executeUpdate();
         } catch (SQLException e) {
             System.out.println("更新学生失败");
-            throw new RuntimeException(e);
+//            throw new RuntimeException(e);
+            e.printStackTrace();
+            return false;
         } finally {
             JDBCConnUtil.closeDB();
+            return true;
         }
     }
 

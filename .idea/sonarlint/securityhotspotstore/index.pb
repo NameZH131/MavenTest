@@ -245,3 +245,5 @@ O
 src/test/java/von/seiji/T7.java,9\d\9db7fd36fe4ebe4a53ccfbb8ad5ce469b9d49e4d
 O
 src/test/java/von/seiji/T8.java,2\5\251aa8add67690235050a184bd105ed890b4d320
+S
+#src/test/java/test/ScannerTset.java,c\d\cd166ea23ee07e0b148a92325763e1e1d25109a8
